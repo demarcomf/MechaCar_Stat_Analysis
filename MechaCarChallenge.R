@@ -1,3 +1,4 @@
+#Deliverable 1
 # 3. use the library function to load dplyr package
 library(dplyr)
 
@@ -22,3 +23,20 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 #Answer 3: R-squared value: 0.7149. 71.5% prediction success would be considered effective. 
 
 #*insert screenshot of console outputs*
+
+#Deliverable 2: Visualizations for Trip Analysis 
+
+# 2. import and read the suspension coil file as a table
+coils <- read.csv('Active Directory/Suspension_Coil.csv',stringsAsFactors = F)
+
+# 3. script that creates total_summary dataframe using the summarize function to get the mean, median, variance, and stddev
+total_summary <- coils %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
+
+# 4. write script that creates lot_summary df using the groupby and summarize functions to group manufacturing lot mean, median, variance, std dev
+lot_summary <- coils %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
+
+# Deliverable 2 Questions
+# Question: Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+# Answer: Total variance is 76.23459 due to the fact that Lot3 is struggling to meet design specs. Lot1 and Lot2 have variances between 10.13 and 1.14, while Lot3 is hitting 220.01. In order to bring the manufacturing PSI value, Lot3 needs to either stop entirely, or take notes from Lot1 and 2.
+
+
