@@ -12,3 +12,12 @@
 **Answer 3**: R-squared value: 0.7149. 71.5% prediction success would be considered effective. 
 
 ![Deliverable 1 Screenshot](https://github.com/demarcomf/MechaCar_Stat_Analysis/blob/main/Deliverable%201%20Screenshot.PNG)
+
+## Summary Statistics on Suspension Coils
+
+**Question**: Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not? <br />
+**Answer**: Total variance is 76.23459 due to the fact that Lot3 is struggling to meet design specs. Lot1 and Lot2 have variances between 10.13 and 1.14, while Lot3 is hitting 220.01. In order to bring the manufacturing PSI value, Lot3 needs to either stop entirely, or take notes from Lot1 and 2.
+
+![Total Summary DF](https://github.com/demarcomf/MechaCar_Stat_Analysis/blob/main/Total%20Summary%20Table.PNG)
+
+![Lot Summary DF](https://github.com/demarcomf/MechaCar_Stat_Analysis/blob/main/Lot%20Summary%20Dataframe.PNG)
