@@ -39,4 +39,20 @@ lot_summary <- coils %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI
 # Question: Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 # Answer: Total variance is 76.23459 due to the fact that Lot3 is struggling to meet design specs. Lot1 and Lot2 have variances between 10.13 and 1.14, while Lot3 is hitting 220.01. In order to bring the manufacturing PSI value, Lot3 needs to either stop entirely, or take notes from Lot1 and 2.
 
+# *insert screenshot here*
 
+# Deliverable 3: T-Test on Suspension Coils
+# 1. write script using t.test function to determine if PSI across manu lots is stat different from the mean of 1500 PSI
+t.test(x=coils$PSI, mu=1500)
+
+# 2. write 3 scripts using t.test and subset argument to determine if PSI for each manu lot is diff from pop mean of 1500 PSI
+t.test(x=coils$PSI, mu=1500)
+pop1 <- subset(coils, Manufacturing_Lot=='Lot1')
+t.test(x=pop1$PSI, mu=1500)
+pop2 <- subset(coils, Manufacturing_Lot=='Lot2')
+t.test(x=pop2$PSI, mu=1500)
+pop3 <- subset(coils, Manufacturing_Lot=='Lot3')
+t.test(x=pop3$PSI, mu=1500)
+
+# Deliverable 3 Summary
+# There is not a statistical difference worth mentioning between the 3 lots and the general population in measure PSI.
