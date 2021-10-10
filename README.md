@@ -21,3 +21,11 @@
 ![Total Summary DF](https://github.com/demarcomf/MechaCar_Stat_Analysis/blob/main/Total%20Summary%20Table.PNG)
 
 ![Lot Summary DF](https://github.com/demarcomf/MechaCar_Stat_Analysis/blob/main/Lot%20Summary%20Dataframe.PNG)
+
+## T-Tests on Suspension Coils
+
+**Summary**: There is not a statistical difference in mean worth mentioning between the 3 lots and the general population in measure PSI.
+
+![T-Test Screenshot](https://github.com/demarcomf/MechaCar_Stat_Analysis/blob/main/T-Test%20Screenshot.PNG)
+
+
