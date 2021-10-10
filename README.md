@@ -29,3 +29,15 @@
 ![T-Test Screenshot](https://github.com/demarcomf/MechaCar_Stat_Analysis/blob/main/T-Test%20Screenshot.PNG)
 
 
+## Study Design: MechaCar vs Competition
+
+**Question 1**: What metric or metrics are you going to test? <br />
+**Answer**: Average consumers don't particularly care about horsepower, engine size, etc. The specifics that I personally care about are, price, MPG, and overall build quality. In this case, I would probably test City vs Highway MPG so I can gauge what kind of vehicle I would need for my M-F commuting schedule. <br />
+**Question 2**: What is the null hypothesis or alternative hypothesis? <br />
+**Answer**: Null hypothesis = classes of cars have similar MPG. Alternative hypothesis = variance among car classes run rampant. <br />
+**Question 3**: What statistical test would you use to test the hypothesis? And why? <br />
+**Answer**: ANOVA test. Creating a p-value will help reject or accept our simple null hypothesis. <br />
+**Question 4**: What data is needed to run the statistical test? <br />
+**Answer**: Collect at least 5 data points of MPG per 25 different pickup trucks. This will quickly determine if our null hypothesis should be accepted.
+
+
