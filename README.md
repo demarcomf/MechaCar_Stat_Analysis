@@ -10,3 +10,5 @@
 
 **Question 3**: Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not? <br />
 **Answer 3**: R-squared value: 0.7149. 71.5% prediction success would be considered effective. 
+
+![Deliverable 1 Screenshot](https://github.com/demarcomf/MechaCar_Stat_Analysis/blob/main/Deliverable%201%20Screenshot.PNG)
